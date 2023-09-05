@@ -1,14 +1,10 @@
-import java.text.NumberFormat;
-import java.text.ParseException;
-
 public class App {
-    public static void main(String[] args) throws Exception {
-        try {
-            Number valor = NumberFormat.getInstance().parse("a1.75");
+    public static void main(String[] args) {
+        for (int numero = 1; numero <= 5; numero++) {
+            if (numero == 3)
+                continue;
 
-            System.out.println(valor);
-        } catch (ParseException e) {
-            e.printStackTrace();
+            System.out.println(numero);
         }
     }
 }
